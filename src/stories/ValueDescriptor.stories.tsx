@@ -5,7 +5,7 @@ import {
 } from "../components/ValueDescriptor/ValueDescriptor";
 
 export default {
-  title: "Forms/ValueDescriptor",
+  title: "Data/ValueDescriptor",
   component: ValueDescriptor,
   // argTypes: {
   //   backgroundColor: { control: "color" },
