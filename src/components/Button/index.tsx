@@ -3,10 +3,10 @@ import * as B from "./styles";
 
 export interface ButtonProps extends ButtonHTMLAttributes<HTMLButtonElement> {
   label: string;
-  variant: "primary" | "danger" | "unstyled";
+  variant?: "primary" | "danger" | "unstyled";
 }
 
-export function Button({ variant, label, ...rest }: ButtonProps) {
+export function Button({ variant = "primary", label, ...rest }: ButtonProps) {
   return (
     <B.Wrapper variant={variant} {...rest}>
       {label}

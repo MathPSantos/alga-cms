@@ -2,11 +2,11 @@ import styled from "styled-components";
 
 const THEME = {
   primary: {
-    bg: "#00243D",
+    bg: "#0099FF",
     color: "#FFFFFF",
   },
   danger: {
-    bg: "#C60404",
+    bg: "#F84735",
     color: "#FFFFFF",
   },
   unstyled: {
