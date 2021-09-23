@@ -1,0 +1,35 @@
+import { ReactNode } from "react";
+import styled from "styled-components";
+
+export interface HeadingProps {
+  level?: 1 | 2 | 3;
+  children: ReactNode;
+}
+
+export function Heading({ level = 1, children }: HeadingProps) {
+  const Componente = {
+    1: Heading1,
+    2: Heading2,
+    3: Heading3,
+  }[level];
+
+  return <Componente>{children}</Componente>;
+}
+
+const Heading1 = styled.h1`
+  font-weight: 900;
+  font-size: 36px;
+  color: #274060;
+`;
+
+const Heading2 = styled.h1`
+  font-weight: 900;
+  font-size: 24px;
+  color: #274060;
+`;
+
+const Heading3 = styled.h1`
+  font-weight: 900;
+  font-size: 18px;
+  color: #274060;
+`;
