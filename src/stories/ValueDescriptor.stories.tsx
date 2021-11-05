@@ -2,7 +2,7 @@ import { Story, Meta } from "@storybook/react";
 import {
   ValueDescriptor,
   ValueDescriptorProps,
-} from "../components/ValueDescriptor/ValueDescriptor";
+} from "../app/components/ValueDescriptor/ValueDescriptor";
 
 export default {
   title: "Data/ValueDescriptor",

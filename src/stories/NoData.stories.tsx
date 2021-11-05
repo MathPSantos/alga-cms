@@ -1,5 +1,5 @@
 import { Meta } from "@storybook/react";
-import { NoData } from "../components/NoData/NoData";
+import { NoData } from "../app/components/NoData/NoData";
 
 export default {
   title: "Data/NoData",

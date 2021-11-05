@@ -1,11 +1,17 @@
 import { ReactNode } from "react";
+import { BrowserRouter } from "react-router-dom";
 
-import GlobalStyles from "./styles/global";
+import GlobalStyles from "./core/styles/global";
 
 interface RootProps {
   children: ReactNode;
 }
 
 export function Root({ children }: RootProps) {
-  return <GlobalStyles>{children}</GlobalStyles>;
+  return (
+    <BrowserRouter>
+      <GlobalStyles />
+      {children}
+    </BrowserRouter>
+  );
 }

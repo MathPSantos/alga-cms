@@ -2,7 +2,7 @@ import { Story, Meta } from "@storybook/react";
 import {
   FieldDescriptor,
   FieldDescriptorProps,
-} from "../components/FieldDescriptor/FieldDescriptor";
+} from "../app/components/FieldDescriptor/FieldDescriptor";
 
 export default {
   title: "Data/FieldDescriptor",
